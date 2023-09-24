@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, ImageBackground, Text, TextInput, View } from "react-native";
+import { Button, ImageBackground, SafeAreaView, Text, TextInput, View } from "react-native";
 import firestore from "@react-native-firebase/firestore";
 import { StyleSheet } from "react-native";
 
@@ -79,14 +79,16 @@ export default function HomeScreen() {
             placeholder="Password"
           />
         </View>
-
         <Button
           title="Sign in"
           onPress={() => {
             console.log("Sign in");
+            navigator.navigate("Friends");
           }}
         />
+
       </ImageBackground>
     </View>
+
   );
 }
