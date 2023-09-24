@@ -43,6 +43,7 @@
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@react-native-community/datetimepicker": "^7.6.0",
+    "lodash": "^4.17.21",
     "react-native-calendars": "^1.1301.0"
   }
 }

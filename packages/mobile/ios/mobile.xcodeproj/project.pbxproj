@@ -15,6 +15,22 @@
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		E58A72E0C46F4C359289330C /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505389FEA6F48048F72D6CE /* noop-file.swift */; };
+		7716A482DC0E4D75A2B622B0 /* JetBrainsMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D02B5F542D9E44008ECAA9A0 /* JetBrainsMono-Bold.ttf */; };
+		A77A7CF66A8941AEAF7C2C7A /* JetBrainsMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65F8D5088EB24DA78B51C2DE /* JetBrainsMono-BoldItalic.ttf */; };
+		29CB422405044B8682EDFEFE /* JetBrainsMono-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFFAF66E80104601AB27927F /* JetBrainsMono-ExtraBold.ttf */; };
+		0600DAA57EE04B469EEBD30C /* JetBrainsMono-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDCDADC4D2404188B57D6182 /* JetBrainsMono-ExtraBoldItalic.ttf */; };
+		3AF00D75EBCB43CAA429C636 /* JetBrainsMono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B32494AEDF14879B0F77E69 /* JetBrainsMono-ExtraLight.ttf */; };
+		CEFD52F5E8284FB9A4369489 /* JetBrainsMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9388D5F630AF4CF4B2E67EE4 /* JetBrainsMono-ExtraLightItalic.ttf */; };
+		D9D62FCBAD5C4FE8843FE71C /* JetBrainsMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28C2384187B242CD85B26D19 /* JetBrainsMono-Italic.ttf */; };
+		2DB980B1E89B4AD48E02197E /* JetBrainsMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9434B814750740E6BF10F65A /* JetBrainsMono-Light.ttf */; };
+		18557CC5F1C840129939B9DC /* JetBrainsMono-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A87B26581BFA45A591093474 /* JetBrainsMono-LightItalic.ttf */; };
+		EAD91035D68D4A509B43C492 /* JetBrainsMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A772A35A3A9C454BB590F4FE /* JetBrainsMono-Medium.ttf */; };
+		F883212C79D24F6F83F61254 /* JetBrainsMono-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3D03202CC4D43269177D47A /* JetBrainsMono-MediumItalic.ttf */; };
+		F994F0086E6841B5A10A8147 /* JetBrainsMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01747C0AB0C34305AAA26176 /* JetBrainsMono-SemiBold.ttf */; };
+		D6A9D9F1FEBE4FB297E4B7A9 /* JetBrainsMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDCDDC58D3394F048A9B15FD /* JetBrainsMono-SemiBoldItalic.ttf */; };
+		8BB7CEAB85104B11BBB10B7B /* JetBrainsMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F594A9BAAFAF4338B1415521 /* JetBrainsMono-Thin.ttf */; };
+		6894CA08C19D489D9569CD7E /* JetBrainsMono-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5204FDBA1A3F4BAC991B9FD7 /* JetBrainsMono-ThinItalic.ttf */; };
+		436C7B075583419ABC1E4315 /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2F01E739508412095B7AC2D /* JetBrainsMono-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +49,22 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F505389FEA6F48048F72D6CE /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "mobile/noop-file.swift"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-mobile/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		D02B5F542D9E44008ECAA9A0 /* JetBrainsMono-Bold.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Bold.ttf"; path = "../assets/fonts/static/JetBrainsMono-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		65F8D5088EB24DA78B51C2DE /* JetBrainsMono-BoldItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-BoldItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CFFAF66E80104601AB27927F /* JetBrainsMono-ExtraBold.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-ExtraBold.ttf"; path = "../assets/fonts/static/JetBrainsMono-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FDCDADC4D2404188B57D6182 /* JetBrainsMono-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-ExtraBoldItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8B32494AEDF14879B0F77E69 /* JetBrainsMono-ExtraLight.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-ExtraLight.ttf"; path = "../assets/fonts/static/JetBrainsMono-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9388D5F630AF4CF4B2E67EE4 /* JetBrainsMono-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-ExtraLightItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28C2384187B242CD85B26D19 /* JetBrainsMono-Italic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Italic.ttf"; path = "../assets/fonts/static/JetBrainsMono-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9434B814750740E6BF10F65A /* JetBrainsMono-Light.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Light.ttf"; path = "../assets/fonts/static/JetBrainsMono-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A87B26581BFA45A591093474 /* JetBrainsMono-LightItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-LightItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A772A35A3A9C454BB590F4FE /* JetBrainsMono-Medium.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Medium.ttf"; path = "../assets/fonts/static/JetBrainsMono-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A3D03202CC4D43269177D47A /* JetBrainsMono-MediumItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-MediumItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		01747C0AB0C34305AAA26176 /* JetBrainsMono-SemiBold.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-SemiBold.ttf"; path = "../assets/fonts/static/JetBrainsMono-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DDCDDC58D3394F048A9B15FD /* JetBrainsMono-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-SemiBoldItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F594A9BAAFAF4338B1415521 /* JetBrainsMono-Thin.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Thin.ttf"; path = "../assets/fonts/static/JetBrainsMono-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5204FDBA1A3F4BAC991B9FD7 /* JetBrainsMono-ThinItalic.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-ThinItalic.ttf"; path = "../assets/fonts/static/JetBrainsMono-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2F01E739508412095B7AC2D /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; name = "JetBrainsMono-Regular.ttf"; path = "../assets/fonts/JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +120,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				C2E96834F00944CB9C7FF352 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +168,30 @@
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
+		};
+		C2E96834F00944CB9C7FF352 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				D02B5F542D9E44008ECAA9A0 /* JetBrainsMono-Bold.ttf */,
+				65F8D5088EB24DA78B51C2DE /* JetBrainsMono-BoldItalic.ttf */,
+				CFFAF66E80104601AB27927F /* JetBrainsMono-ExtraBold.ttf */,
+				FDCDADC4D2404188B57D6182 /* JetBrainsMono-ExtraBoldItalic.ttf */,
+				8B32494AEDF14879B0F77E69 /* JetBrainsMono-ExtraLight.ttf */,
+				9388D5F630AF4CF4B2E67EE4 /* JetBrainsMono-ExtraLightItalic.ttf */,
+				28C2384187B242CD85B26D19 /* JetBrainsMono-Italic.ttf */,
+				9434B814750740E6BF10F65A /* JetBrainsMono-Light.ttf */,
+				A87B26581BFA45A591093474 /* JetBrainsMono-LightItalic.ttf */,
+				A772A35A3A9C454BB590F4FE /* JetBrainsMono-Medium.ttf */,
+				A3D03202CC4D43269177D47A /* JetBrainsMono-MediumItalic.ttf */,
+				01747C0AB0C34305AAA26176 /* JetBrainsMono-SemiBold.ttf */,
+				DDCDDC58D3394F048A9B15FD /* JetBrainsMono-SemiBoldItalic.ttf */,
+				F594A9BAAFAF4338B1415521 /* JetBrainsMono-Thin.ttf */,
+				5204FDBA1A3F4BAC991B9FD7 /* JetBrainsMono-ThinItalic.ttf */,
+				C2F01E739508412095B7AC2D /* JetBrainsMono-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -200,6 +257,22 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				7716A482DC0E4D75A2B622B0 /* JetBrainsMono-Bold.ttf in Resources */,
+				A77A7CF66A8941AEAF7C2C7A /* JetBrainsMono-BoldItalic.ttf in Resources */,
+				29CB422405044B8682EDFEFE /* JetBrainsMono-ExtraBold.ttf in Resources */,
+				0600DAA57EE04B469EEBD30C /* JetBrainsMono-ExtraBoldItalic.ttf in Resources */,
+				3AF00D75EBCB43CAA429C636 /* JetBrainsMono-ExtraLight.ttf in Resources */,
+				CEFD52F5E8284FB9A4369489 /* JetBrainsMono-ExtraLightItalic.ttf in Resources */,
+				D9D62FCBAD5C4FE8843FE71C /* JetBrainsMono-Italic.ttf in Resources */,
+				2DB980B1E89B4AD48E02197E /* JetBrainsMono-Light.ttf in Resources */,
+				18557CC5F1C840129939B9DC /* JetBrainsMono-LightItalic.ttf in Resources */,
+				EAD91035D68D4A509B43C492 /* JetBrainsMono-Medium.ttf in Resources */,
+				F883212C79D24F6F83F61254 /* JetBrainsMono-MediumItalic.ttf in Resources */,
+				F994F0086E6841B5A10A8147 /* JetBrainsMono-SemiBold.ttf in Resources */,
+				D6A9D9F1FEBE4FB297E4B7A9 /* JetBrainsMono-SemiBoldItalic.ttf in Resources */,
+				8BB7CEAB85104B11BBB10B7B /* JetBrainsMono-Thin.ttf in Resources */,
+				6894CA08C19D489D9569CD7E /* JetBrainsMono-ThinItalic.ttf in Resources */,
+				436C7B075583419ABC1E4315 /* JetBrainsMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

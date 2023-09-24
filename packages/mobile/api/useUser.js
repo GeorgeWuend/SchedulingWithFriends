@@ -16,7 +16,7 @@ export default function useUser(userId) {
 
     const eventsSubscriber = firestore()
       .collection("events")
-      .where("friendsInvited", "array-contains", userId)
+      .where("createdBy", "==", userId)
       .onSnapshot((querySnapshot) => {
         const events = querySnapshot.docs.map((doc) => ({
           ...doc.data(),
@@ -39,8 +39,8 @@ export default function useUser(userId) {
           const friendDocument = await firestore()
             .collection("users")
             .doc(friendId)
-            .get();
-          return friendDocument.data();
+            .get()
+          return {id: friendId, data: friendDocument.data()};
         });
 
         const newFriends = await Promise.all(friendDataPromises);

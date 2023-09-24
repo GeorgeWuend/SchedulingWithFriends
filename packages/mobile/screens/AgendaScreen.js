@@ -1,33 +1,38 @@
-import React, { Component } from 'react';
-import { Alert, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import React, { Component } from "react";
+import { Alert, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import CreateEventScreen from "./CreateEventScreen";
 import {
   Agenda,
-  DateData,
-  AgendaEntry,
-  AgendaSchedule,
-} from 'react-native-calendars';
-import testIDs from '../testIDs';
+} from "react-native-calendars";
+import testIDs from "../testIDs";
 
 class AgendaScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
       items: undefined,
+      showCreateEvent: false,
     };
   }
 
   render() {
     return (
-      <Agenda
-        testID={testIDs.agenda.CONTAINER}
-        items={this.state.items}
-        loadItemsForMonth={this.loadItems}
-        selected={'2017-05-16'}
-        renderItem={this.renderItem}
-        renderEmptyDate={this.renderEmptyDate}
-        rowHasChanged={this.rowHasChanged}
-        showClosingKnob={true}
-      />
+      <View style={{ flex: 1 }}>
+        {this.state.showCreateEvent ? null : (
+          <Agenda
+            testID={testIDs.agenda.CONTAINER}
+            items={this.state.items}
+            loadItemsForMonth={this.loadItems}
+            selected={"2017-05-16"}
+            renderItem={this.renderItem}
+            renderEmptyDate={this.renderEmptyDate}
+            rowHasChanged={this.rowHasChanged}
+            showClosingKnob={true}
+          />
+        )}
+
+        {this.state.showCreateEvent && this.renderCreateEventScreen()}
+      </View>
     );
   }
 
@@ -45,7 +50,7 @@ class AgendaScreen extends Component {
           const numItems = Math.floor(Math.random() * 3 + 1);
           for (let j = 0; j < numItems; j++) {
             items[strTime].push({
-              name: 'Item for ' + strTime + ' #' + j,
+              name: "Item for " + strTime + " #" + j,
               height: Math.max(50, Math.floor(Math.random() * 150)),
               day: strTime,
             });
@@ -72,17 +77,37 @@ class AgendaScreen extends Component {
 
   renderItem = (reservation, isFirst) => {
     const fontSize = isFirst ? 16 : 14;
-    const color = isFirst ? 'black' : '#43515c';
+    const color = isFirst ? "black" : "#43515c";
 
     return (
       <TouchableOpacity
         testID={testIDs.agenda.ITEM}
         style={[styles.item, { height: reservation.height }]}
-        onPress={() => Alert.alert(reservation.name)}
+        onPress={() =>
+          this.setState({
+            showCreateEvent: true,
+            selectedReservation: reservation,
+          })
+        }
       >
         <Text style={{ fontSize, color }}>{reservation.name}</Text>
       </TouchableOpacity>
     );
+  };
+
+  renderCreateEventScreen = () => {
+    const { selectedReservation } = this.state;
+
+    if (this.state.showCreateEvent) {
+      return (
+        <CreateEventScreen
+          reservation={selectedReservation}
+          onClose={() => this.setState({ showCreateEvent: false })}
+        />
+      );
+    }
+
+    return null;
   };
 
   renderEmptyDate = () => {
@@ -99,13 +124,13 @@ class AgendaScreen extends Component {
 
   timeToString(time) {
     const date = new Date(time);
-    return date.toISOString().split('T')[0];
+    return date.toISOString().split("T")[0];
   }
 }
 
 const styles = StyleSheet.create({
   item: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     flex: 1,
     borderRadius: 5,
     padding: 10,
@@ -120,7 +145,7 @@ const styles = StyleSheet.create({
   customDay: {
     margin: 10,
     fontSize: 24,
-    color: 'green',
+    color: "green",
   },
   dayItem: {
     marginLeft: 34,

@@ -10,9 +10,13 @@ import SettingsScreen from "./screens/SettingsScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FriendsScreen from "./screens/FriendsScreen"
 import AgendaScreen from "./screens/AgendaScreen"
+
 // import CreateEventScreen from "./screens/CreateEventScreen";
 import { createStackNavigator } from '@react-navigation/stack';
 import StackNavigator from "@react-navigation/stack/src/navigators/createStackNavigator";
+
+import CreateEventScreen from "./screens/CreateEventScreen";
+
 const Tab = createBottomTabNavigator();
 
 const Stack = createStackNavigator();
@@ -72,16 +76,6 @@ function MyTabs() {
           ),
         }}
       />
-      {/*<Tab.Screen*/}
-      {/*  name="Event"*/}
-      {/*  component={CreateEventScreen}*/}
-      {/*  options={{*/}
-      {/*    tabBarLabel: "Event",*/}
-      {/*    tabBarIcon: ({ color, size }) => (*/}
-      {/*      <MaterialCommunityIcons name="bell" color={color} size={size} />*/}
-      {/*    ),*/}
-      {/*  }}*/}
-      {/*/>*/}
     </Tab.Navigator>
   );
 }
