@@ -1,6 +1,8 @@
+import 'react-native-gesture-handler';
+
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { NavigationContainer } from "@react-navigation/native";
@@ -8,19 +10,28 @@ import SettingsScreen from "./screens/SettingsScreen";
 import HomeScreen from "./screens/HomeScreen";
 import FriendsScreen from "./screens/FriendsScreen"
 import AgendaScreen from "./screens/AgendaScreen"
+
+// import CreateEventScreen from "./screens/CreateEventScreen";
+import { createStackNavigator } from '@react-navigation/stack';
+import StackNavigator from "@react-navigation/stack/src/navigators/createStackNavigator";
+
 import CreateEventScreen from "./screens/CreateEventScreen";
 
 const Tab = createBottomTabNavigator();
 
-function MyTabs() {
-  return (
-    <Tab.Navigator
+const Stack = createStackNavigator();
+
+/*
       initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: "#e91e63",
         headerShown: false,
+        tabBarHideOnKeyboard: true,
       }}
-    >
+ */
+function MyTabs() {
+  return (
+    <Tab.Navigator>
 
       <Tab.Screen
         name="Home"
@@ -69,11 +80,32 @@ function MyTabs() {
   );
 }
 
+function MyStackNavigator() {
+  return(
+    <Stack.Navigator initialRouteName="Tabs">
+      <Stack.Screen
+        name="Tabs"
+        component={HomeScreen}
+      />
+      <Stack.Screen
+        name="Test"
+        component={MyTabs}
+      />
+    </Stack.Navigator>
+
+
+
+  );
+  //      <Stack.Screen component={MyTabs} name={"Tabs"}/>
+  //<StackNavigator>
+  //   </StackNavigator>
+}
+
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar style="auto" />
-      <MyTabs />
+      <StatusBar style="auto" hidden={true} />
+      <MyStackNavigator />
     </NavigationContainer>
   );
 }

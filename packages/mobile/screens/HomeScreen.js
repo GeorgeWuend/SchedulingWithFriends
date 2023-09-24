@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import {
   Button,
   Pressable,
@@ -124,9 +125,11 @@ export default function HomeScreen() {
             }}
           ></View>
 
+
           <Text style={styles.text}>Or</Text>
 
-          <Pressable onPress={() => console.log("pressed")}>
+          <Pressable onPress={() => (console.log("pressed")
+                                    navigator.navigate("Friends"))}>
             {({ pressed }) => (
               <Text style={[styles.google, pressed && styles.buttonPressed]}>
                 Sign in with Google
@@ -134,7 +137,9 @@ export default function HomeScreen() {
             )}
           </Pressable>
         </View>
+
       </ImageBackground>
     </View>
+
   );
 }
